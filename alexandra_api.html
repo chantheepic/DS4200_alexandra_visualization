@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css">
+
+    <title>HATD</title>
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <a class="navbar-brand" href="#"> Hotel Alexandra Traffic Data Visualization Tool </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="index.html">Back</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="container my-3">
+            <div class="jumbotron">
+                <h1 class="display-4">Traffic Data Visualization</h1>
+                <hr class="my-4" />
+                <p>The following documentation pertains to the Hotel Alexandra Traffic Dataset and its associated API
+                </p>
+            </div>
+
+            <hr class="bg-primary" />
+
+            <div class="web-api">
+                <h2 class="h2">Getting Started with the Hotel Alexandra Web API</h2>
+                <p class="p mt-1">For ease of data access, a simple web api has been created to aid data retreival <br>
+                    if there are any functionality additions you would like, please send them by email.</p>
+                <h3 class="h3 mt-2">Call Structure</h3>
+                <div id="graph-1"></div>
+                <pre><code class="language-javascript">
+&lt;script&gt;
+    $.get(&quot;https://chanminis.online/public/api/alexandra/trafficflow/time/07:00/17:00&quot;, function (result) {
+        console.log(result);
+    });
+&lt;/script&gt;
+                </code></pre>
+
+                <P class="container mt-1">
+                    <a
+                        href="https://chanminis.online/public/api/alexandra/trafficflow/time/07:00/17:00">https://chanminis.online/public/api/alexandra/trafficflow/time/07:00/17:00</a>
+                    <br>
+                    The following returns a json of all traffic flow data between 7am and 5pm.
+                    A jQuery AJAX call is made via the $.get function and the URI is given as an argument.
+                    <b>Use a callback function to ensure that the call is completed </b> before the data is
+                    displayed. Clicking on the link above shows the JSON response.
+                </P>
+
+                <h3 class="h3 mt-2">Supported URIs</h3>
+                <p>Note that all calls should start with https://chanminis.online/public/api/alexandra
+                    <br>Send me an email if something doesn't work
+                </p>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">URI</th>
+                            <th scope="col">supported commands</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Traffic Flow</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>/trafficflow/time/{startTime}/{endTime}</td>
+                            <td>Retreive all traffic flow seperated by type between {startTime} and {endTime}
+                                time selection is done by 15 minute increments. <i>(14:30 works but 14:31 does not)</i>
+                                <br>Data exists from 7am to 5pm both inclusive.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>/trafficflow/timetype/{startTime}/{endTime}/{type}</td>
+                            <td>Retreive all traffic flow between {startTime} and {endTime} only of type {type}
+                                time selection is done by 15 minute increments. <i>(14:30 works but 14:31 does not)</i>
+                                <br>Data exists from 7am to 5pm both inclusive. Queryable types are CARS, HV, PAB
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>/trafficflow/timetotal/{startTime}/{endTime}</td>
+                            <td>Return sum of vehicle volume between {startTime} and {endTime} seperated by type
+                                time selection is done by 15 minute increments. <i>(14:30 works but 14:31 does not)</i>
+                                <br>Data exists from 7am to 5pm both inclusive.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
+</body>
+
+</html>

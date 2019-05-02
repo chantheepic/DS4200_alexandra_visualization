@@ -1,0 +1,237 @@
+<svg id="intersection_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 1047">
+  <!-- <title>AlexandraHotelIntersection</title> -->
+  <g class="svg_skel">
+    <style>
+      .heavy {font: 20px sans-serif;}
+    </style>
+    <text x="35" y="500" fill="grey" class="heavy">Mass Ave.</text>
+    <text x="760" y="530" fill="grey" class="heavy" style="transform: rotate(90deg); transform-origin:center">Washington St.</text>
+    
+    <polygon points="353 553 353 734 237 734 237 609 34 609 34 553 353 553" fill="#f1f5f6" stroke="#cccccb" stroke-miterlimit="10" stroke-width="6"/>
+    <g class="svg_building">
+      <rect x="34" y="641" width="170" height="92.95" fill="#f1f5f6" stroke="#cccccb" stroke-miterlimit="10" stroke-width="6"/>
+    </g>
+    <g class="svg_building">
+      <rect x="34" y="247" width="319" height="181.65" fill="#f1f5f6"/>
+      <path d="M356,431H31V244H356ZM37,425H350V250H37Z" fill="#cccccb"/>
+    </g>
+    <g class="svg_building">
+      <rect x="34" y="32" width="319" height="181.65" fill="#f1f5f6"/>
+      <path d="M356,217H31V29H356ZM37,211H350V35H37Z" fill="#cccccb"/>
+    </g>
+    <g class="svg_building">
+      <rect x="477" y="32" width="109" height="181.65" fill="#f1f5f6"/>
+      <path d="M589,217H474V29H589Zm-109-6H583V35H480Z" fill="#cccccb"/>
+    </g>
+    <g class="svg_building">
+      <rect x="477" y="247" width="109" height="181.65" fill="#f1f5f6"/>
+      <path d="M589,431H474V244H589Zm-109-6H583V250H480Z" fill="#cccccb"/>
+    </g>
+    <g class="svg_building">
+      <rect x="619" y="247" width="177" height="74.48" fill="#f1f5f6"/>
+      <path d="M799,324H616V244H799Zm-177-6H793V250H622Z" fill="#cccccb"/>
+    </g>
+    <g class="svg_building">
+      <rect x="619" y="153" width="177" height="60.55" fill="#f1f5f6"/>
+      <path d="M799,217H616V150H799Zm-177-6H793V156H622Z" fill="#cccccb"/>
+    </g>
+    <g class="svg_building">
+      <path d="M796,55v66H619V32S660,55,796,55Z" fill="#f1f5f6"/>
+      <path d="M799,124H616V27l4,2s43,22,176,22h3Zm-177-6H793V58C683,57,635,42,622,37Z" fill="#cccccb"/>
+    </g>
+    <g class="svg_building">
+      <rect x="619" y="354" width="177" height="74.48" fill="#f1f5f6"/>
+      <path d="M799,431H616V351H799Zm-177-6H793V357H622Z" fill="#cccccb"/>
+    </g>
+    <g class="svg_building">
+      <rect x="477" y="553" width="142" height="181.65" fill="#f1f5f6"/>
+      <path d="M622,737H474V550H622Zm-142-6H616V556H480Z" fill="#cccccb"/>
+    </g>
+    <g class="svg_building">
+      <rect x="651" y="553" width="142" height="74.48" fill="#f1f5f6"/>
+      <path d="M796,630H648V550H796Zm-142-6H790V556H654Z" fill="#cccccb"/>
+    </g>
+    <g class="svg_building">
+      <rect x="651" y="660" width="142" height="74.48" fill="#f1f5f6"/>
+      <path d="M796,737H648V657H796Zm-142-6H790V663H654Z" fill="#cccccb"/>
+    </g>
+    <g class="svg_building">
+      <rect x="477" y="767" width="319" height="249.55" fill="#f1f5f6"/>
+      <path d="M799,1019H474V764H799Zm-319-6H793V770H480Z" fill="#cccccb"/>
+    </g>
+    <g class="svg_building">
+      <rect x="34" y="766" width="319" height="249.55" fill="#f1f5f6"/>
+      <path d="M356,1019H31V763H356Zm-319-6H350V769H37Z" fill="#cccccb"/>
+    </g>
+    <g class="svg_building">
+      <path d="M356,737H234V612H31V550H356Zm-116-6H350V556H37v50H240Z" fill="#cccccb"/>
+    </g>
+  </g>
+  <g class="svg_h">
+    <g>
+      <circle cx="295" cy="590" r="21" fill="#f99f27"/>
+      <polygon points="276 599 314 599 295 641 276 599" fill="#f99f27"/>
+      <circle cx="295" cy="590" r="9" fill="#dc8527"/>
+    </g>
+  </g>
+  <g id="svg_arrows">
+    <g>
+      <!-- bottom section left -->
+      <g id="svg_arrow_wafw_out" class="svg_arrow">
+        <rect x="382" y="550" width="11" height="44.18" fill="#540d66"/>
+        <polygon points="374 594 402 594 388 612 374 594" fill="#540d66"/>
+      </g>
+      <!-- bottom section right -->
+      <g id="svg_arrow_wafe_in" class="svg_arrow">
+        <rect x="436" y="568" width="11" height="44.18" fill="#540d66"/>
+        <polygon points="428 568 456 568 442 549 428 568" fill="#540d66"/>
+      </g>
+      <!-- top section left -->
+      <g id="svg_arrow_wafw_in" class="svg_arrow">
+        <rect x="382" y="368" width="11" height="44.18" fill="#540d66"/>
+        <polygon points="374 412 402 412 388 431 374 412" fill="#540d66"/>
+      </g>
+      <!-- top section right -->
+      <g id="svg_arrow_wafe_out" class="svg_arrow">
+        <rect x="436" y="387" width="11" height="44.18" fill="#540d66"/>
+        <polygon points="428 387 456 387 442 368 428 387" fill="#540d66"/>
+      </g>
+      <!-- right section bottom -->
+      <g id="svg_arrow_mafs_out" class="svg_arrow">
+        <rect x="491" y="495" width="11" height="44.18" transform="translate(-21 1013) rotate(-90)" fill="#540d66"/>
+        <polygon points="518 531 518 503 537 517 518 531" fill="#540d66"/>
+      </g>
+      <!-- right section top -->
+      <g id="svg_arrow_mafn_in" class="svg_arrow">
+        <rect x="509" y="441" width="11" height="44.18" transform="translate(52 978) rotate(-90)" fill="#540d66"/>
+        <polygon points="493 478 493 449 474 463 493 478" fill="#540d66"/>
+      </g>
+      <!-- left section bottom -->
+      <g id="svg_arrow_mafs_in" class="svg_arrow">
+        <rect x="309" y="495" width="11" height="44.18" transform="translate(-202 832) rotate(-90)" fill="#540d66"/>
+        <polygon points="337 531 337 503 356 517 337 531" fill="#540d66"/>
+      </g>
+      <!-- left section top -->
+      <g id="svg_arrow_mafn_out" class="svg_arrow">
+        <rect x="328" y="441" width="11" height="44.18" transform="translate(-130 797) rotate(-90)" fill="#540d66"/>
+        <polygon points="312 478 312 449 293 463 312 478" fill="#540d66"/>
+      </g>
+      <!-- bottom right to top right trail -->
+      <g id="svg_wafe_to_wafe" class="svg_arrow_trail">
+        <rect x="440" y="546" width="4" height="3.5" fill="#540d66"/>
+        <path d="M444,538h-4v-7h4Zm0-15h-4v-7h4Zm0-15h-4v-7h4Zm0-15h-4v-7h4Zm0-15h-4v-7h4Zm0-15h-4v-7h4Zm0-15h-4v-7h4Z" fill="#540d66"/>
+        <rect x="440" y="431" width="4" height="3.5" fill="#540d66"/>
+      </g>
+      <!-- bottom right to left top trail -->
+      <g id="svg_wafe_to_mafn" class="svg_arrow_trail">
+        <path d="M429,513l-4-6,3-2,4,6Zm-8-11-5-5,3-3,5,5Zm-10-9-5-4,2-3,6,4Zm-11-8-6-4,2-3,6,4Zm-12-7-6-3,2-4,6,3Zm-13-6-6-3v-4l7,3Zm-13-5-7-2v-4l7,2Z" fill="#540d66"/>
+      </g>
+      <g id="svg_wafe_to_mafs" class="svg_arrow_trail">
+        <path d="M452,526l-3-3,6-4,2,4Zm12-5v-4h7v4Z" fill="#540d66"/>
+      </g>
+      <g id="svg_wafw_to_wafw" class="svg_arrow_trail">
+        <rect x="386" y="431" width="4" height="3.5" fill="#540d66"/>
+        <path d="M386,442h4v7h-4Zm0,15h4v7h-4Zm0,15h4v7h-4Zm0,15h4v7h-4Zm0,15h4v7h-4Zm0,15h4v7h-4Zm0,15h4v7h-4Z" fill="#540d66"/>
+        <rect x="386" y="546" width="4" height="3.5" fill="#540d66"/>
+      </g>
+      <g id="svg_wafw_to_mafs" class="svg_arrow_trail">
+        <path d="M401,467l4,6-3,2-4-6Zm8,11,5,5-3,3-5-5Zm10,9,5,4-2,3-6-4Zm11,8,6,4-2,3-6-4Zm12,7,6,3-2,4-6-3Zm13,6,6,3v4l-7-3Zm13,5,7,2v4l-7-2Z" fill="#540d66"/>
+      </g>
+      <g id="svg_wafw_to_mafn" class="svg_arrow_trail">
+        <path d="M378,455l3,3-6,4-2-4Zm-12,5v4h-7v-4Z" fill="#540d66"/>
+      </g>
+      <g id="svg_mafn_to_mafn" class="svg_arrow_trail">
+        <rect x="471" y="461" width="4" height="4" fill="#540d66"/>
+        <path d="M463,461v4h-7v-4Zm-15,0v4h-7v-4Zm-15,0v4h-7v-4Zm-15,0v4h-7v-4Zm-15,0v4h-7v-4Zm-15,0v4h-7v-4Zm-15,0v4h-7v-4Z" fill="#540d66"/>
+        <rect x="356" y="461" width="4" height="4" fill="#540d66"/>
+      </g>
+      <g id="svg_mafn_to_wafw" class="svg_arrow_trail">
+        <path d="M438,476l-6,4-2-3,6-4Zm-11,8-5,5-3-3,5-5Zm-9,10-4,5-3-2,4-6Zm-8,11-4,6-3-2,4-6Zm-7,12-3,6-4-2,3-6Zm-6,13-3,6h-4l3-7Zm-5,13-2,7h-4l2-7Z" fill="#540d66"/>
+      </g>
+      <g id="svg_mafn_to_wafe" class="svg_arrow_trail">
+        <path d="M450,453l-3,3-4-6,4-2Zm-5-12h-4a49,49,0,0,1-1-7h4A45,45,0,0,0,445,442Z" fill="#540d66"/>
+      </g>
+      <g id="svg_mafs_to_mafs" class="svg_arrow_trail">
+        <rect x="356" y="515" width="4" height="4" fill="#540d66"/>
+        <path d="M367,519v-4h7v4Zm15,0v-4h7v4Zm15,0v-4h7v4Zm15,0v-4h7v4Zm15,0v-4h7v4Zm15,0v-4h7v4Zm15,0v-4h7v4Z" fill="#540d66"/>
+        <rect x="471" y="515" width="4" height="4" fill="#540d66"/>
+      </g>
+      <g id="svg_mafs_to_wafe" class="svg_arrow_trail">
+        <path d="M392,504l6-4,2,3-6,4Zm11-8,5-5,3,3-5,5Zm9-10,4-5,3,2-4,6Zm8-11,4-6,3,2-4,6Zm7-12,3-6,4,2-3,6Zm6-13,3-6h4l-3,7Zm5-13,2-7h4l-2,7Z" fill="#540d66"/>
+      </g>
+      <g id="svg_mafs_to_wafw" class="svg_arrow_trail">
+        <path d="M380,527l3-3,4,6-4,2Zm5,12h4a49,49,0,0,1,1,7h-4A45,45,0,0,0,385,539Z" fill="#540d66"/>
+      </g>
+    </g>
+  </g>
+  <g class="svg_all_parking">
+    <g>
+      <path d="M207,737H31V638H207ZM37,731H201V644H37Z" fill="#cccccb"/>
+      <rect class="svg_up all" x="31" y="638" width="6" height="98.95" fill="#303435"/>
+      <rect class="svg_np all" x="37" y="638" width="164" height="6" fill="#b82e62"/>
+      <rect class="svg_rppo all" x="37" y="731" width="170" height="6" fill="#3051a3"/>
+      <rect class="svg_np all" x="201" y="638" width="6" height="92.95" fill="#b82e62"/>
+    </g>
+    <g>
+      <rect class="svg_np all" x="37" y="606" width="197" height="6" fill="#b82e62"/>
+      <rect class="svg_np all" x="234" y="606" width="6" height="125.65" fill="#b82e62"/>
+      <rect class="svg_rppo all" x="234" y="731" width="122" height="6" fill="#3051a3"/>
+      <rect class="svg_m all" x="350" y="591" width="6" height="140.24" fill="#6cbf56"/>
+      <rect class="svg_rppo all" x="31" y="556" width="6" height="56" fill="#3051a3"/>
+      <rect class="svg_up all" x="31" y="550" width="325" height="6" fill="#303435"/>
+    </g>
+    <g>
+      <rect class="svg_hp all" x="31" y="250" width="6" height="181.65" fill="#dc8527"/>
+      <rect class="svg_m all" x="350" y="244" width="6" height="187.65" fill="#6cbf56"/>
+      <rect class="svg_up all" x="37" y="425" width="313" height="6" fill="#303435"/>
+      <rect class="svg_ro all" x="31" y="244" width="319" height="6" fill="#a065aa"/>
+    </g>
+    <g>
+      <rect class="svg_ro all" x="31" y="211" width="319" height="6" fill="#a065aa"/>
+      <rect class="svg_up all" x="350" y="75" width="6" height="141.46" fill="#303435"/>
+    </g>
+    <g>
+      <rect class="svg_hp all" x="480" y="425" width="109" height="6" fill="#dc8527"/>
+      <line class="svg_mc all" x1="477" y1="261" x2="477" y2="419" fill="none" stroke="#6cbf56" stroke-miterlimit="10" stroke-width="6" stroke-dasharray="7 10"/>
+    </g>
+    <g>
+      <line class="svg_hewrp all" x1="572" y1="247" x2="486" y2="247" fill="none" stroke="#dc8527" stroke-miterlimit="10" stroke-width="6" stroke-dasharray="7 10"/>
+    </g>
+    <g>
+      <rect class="svg_ro all" x="616" y="425" width="183" height="6" fill="#a065aa"/>
+      <line class="svg_hewrp all" x1="781" y1="247" x2="628" y2="247" fill="none" stroke="#dc8527" stroke-miterlimit="10" stroke-width="6" stroke-dasharray="8 11"/>
+    </g>
+    <g>
+      <line class="svg_hewrp all" x1="781" y1="214" x2="628" y2="214" fill="none" stroke="#dc8527" stroke-miterlimit="10" stroke-width="6" stroke-dasharray="8 11"/>
+    </g>
+    <g>
+      <rect class="svg_up all" x="474" y="770" width="6" height="196.93" fill="#303435"/>
+      <line class="svg_rppo86 all" x1="785" y1="767" x2="483" y2="767" fill="none" stroke="#3051a3" stroke-linecap="round" stroke-linejoin="round" stroke-width="6" stroke-dasharray="0 11"/>
+    </g>
+    <g>
+      <rect class="svg_up all" x="350" y="770" width="6" height="249.07" fill="#303435"/>
+      <line class="svg_rppo88 all" x1="338" y1="766" x2="43" y2="766" fill="none" stroke="#3051a3" stroke-miterlimit="10" stroke-width="6" stroke-dasharray="10 10"/>
+    </g>
+    <g>
+      <rect class="svg_m all" x="474" y="591" width="6" height="140.24" fill="#6cbf56"/>
+      <rect class="svg_rppo all" x="474" y="550" width="148" height="6" fill="#3051a3"/>
+      <line class="svg_rppo86 all" x1="608" y1="734" x2="483" y2="734" fill="none" stroke="#3051a3" stroke-linecap="round" stroke-linejoin="round" stroke-width="6" stroke-dasharray="0 10"/>
+    </g>
+    <g>
+      <rect class="svg_rppo all" x="648" y="550" width="148" height="6" fill="#3051a3"/>
+      <line class="svg_rppo86 all" x1="782" y1="734" x2="657" y2="734" fill="none" stroke="#3051a3" stroke-linecap="round" stroke-linejoin="round" stroke-width="6" stroke-dasharray="0 10"/>
+    </g>
+    <g>
+      <line class="svg_2hewrp all" x1="572" y1="214" x2="486" y2="214" fill="none" stroke="#dc8527" stroke-miterlimit="10" stroke-width="6" stroke-dasharray="7 10"/>
+      <rect class="svg_m all" x="474" y="29" width="6" height="187.65" fill="#6cbf56"/>
+    </g>
+  </g>
+  <g class="svg_bs all">
+    <g>
+      <rect x="350" y="556" width="6" height="35.41" fill="#de4799"/>
+      <rect x="474" y="967" width="6" height="52.62" fill="#de4799"/>
+      <rect x="474" y="556" width="6" height="35.41" fill="#de4799"/>
+      <rect x="350" y="29" width="6" height="46.19" fill="#de4799"/>
+    </g>
+  </g>
+</svg>

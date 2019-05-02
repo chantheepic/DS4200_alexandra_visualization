@@ -1,0 +1,222 @@
+.intersection-svg {
+  transform: scale(0.9);
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.showing {
+  visibility: visible;
+}
+
+.svg_arrow:hover {
+  cursor: pointer;
+}
+
+.tooltip {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 120px;
+  min-height: 40px;
+  padding: 5px;
+  background-color: #fff;
+  border: 1px solid #878787;
+  border-radius: 4px;
+  pointer-events: none;
+  box-shadow: 0px 3px 4px 1px rgba(0,0,0,0.2);
+}
+
+.gradient {
+  width: 80px;
+  height: 20px;
+  background-image: linear-gradient(90deg, white, #540d66);
+}
+
+.gradient-label {
+  position: absolute;
+  bottom: -10px;
+  margin: 0;
+  height: 10px;
+}
+
+#lowtraf{
+  font-size: x-small;
+  left: 0;
+}
+
+#hightraf{
+  font-size: x-small;
+  right: 0;
+}
+
+.traffic-label {
+  margin-right: 20px;
+}
+
+.time-label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 12px;
+}
+
+.time-value {
+  margin-left: 5px;
+}
+
+/* colors for selectors */
+
+.selectors li {
+  font-size: 0.7em;
+}
+#h{
+  border: 2px solid #878787 !important;
+  background-color: white;
+  color: #878787;
+}
+#bs{
+  border: 2px solid #878787 !important;
+  background-color: white;
+  color: #878787;
+}
+#cars{
+  margin: 2px;
+  border: 2px solid #878787 !important;
+  background-color: white;
+  color: #878787;
+}
+#hv{
+  margin: 2px;
+  border: 2px solid #878787 !important;
+  background-color: white;
+  color: #878787;
+}
+#pab{
+  margin: 2px;
+  border: 2px solid #878787 !important;
+  background-color: white;
+  color: #878787;
+}
+#np{
+  margin: 2px;
+  border: 2px solid #878787 !important;
+  background-color: white;
+  color: #878787;
+}
+#up{
+  margin: 2px;
+  border: 2px solid #878787 !important;
+  background-color: white;
+  color: #878787;
+}
+#m{
+  margin: 2px;
+  border: 2px solid #878787 !important;
+  background-color: white;
+  color: #878787;
+}
+#mc{
+  margin: 2px;
+  border: 2px solid #878787 !important;
+  background-color: white;
+  color: #878787;
+}
+#hp{
+  margin: 2px;
+  border: 2px solid #878787 !important;
+  background-color: white;
+  color: #878787;
+}
+#ro{
+  margin: 2px;
+  border: 2px solid #878787 !important;
+  background-color: white;
+  color: #878787;
+}
+#hewrp{
+  margin: 2px;
+  border: 2px solid #878787 !important;
+  background-color: white;
+  color: #878787;
+}
+#rppo{
+  margin: 2px;
+  border: 2px solid #878787 !important;
+  background-color: white;
+  color: #878787;
+}
+#rppo88{
+  margin: 2px;
+  border: 2px solid #878787 !important;
+  background-color: white;
+  color: #878787;
+}
+#rppo86{
+  margin: 2px;
+  border: 2px solid #878787 !important;
+  background-color: white;
+  color: #878787;
+}
+
+#h.active{
+  border: 2px solid #f99f27 !important;
+  color: #f99f27;
+}
+#bs.active{
+  border: 2px solid #de4799 !important;
+  color: #de4799;
+}
+#cars.active{
+  border: 2px solid #1f77e4 !important;
+  color: #1f77e4;
+}
+#hv.active{
+  border: 2px solid #ff7f0e !important;
+  color: #ff7f0e;
+}
+#pab.active{
+  border: 2px solid #2ca02c !important;
+  color: #2ca02c;
+}
+#np.active{
+  border: 2px solid #b82e62 !important;
+  color: #b82e62;
+}
+#up.active{
+  border: 2px solid #303435 !important;
+  color: #303435;
+}
+#m.active{
+  border: 2px solid #6cbf56 !important;
+  color: #6cbf56;
+}
+#mc.active{
+  border: 2px dashed #6cbf56 !important;
+  color: #6cbf56;
+}
+#hp.active{
+  border: 2px dashed #dc8527 !important;
+  color: #dc8527;
+}
+#ro.active{
+  border: 2px solid #a065aa !important;
+  color: #a065aa;
+}
+#hewrp.active{
+  border: 2px dotted #dc8527 !important;
+  color: #dc8527;
+}
+#rppo.active{
+  border: 2px solid #3051a3 !important;
+  color: #3051a3;
+}
+#rppo88.active{
+  border: 2px dashed #3051a3 !important;
+  color: #3051a3;
+}
+#rppo86.active{
+  border: 2px dotted #3051a3 !important;
+  color: #3051a3;
+}

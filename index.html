@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="src/svg-inject.js"></script>
+  <title>HATD</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href=""> Hotel Alexandra Traffic Data Visualization Tool </a>
+
+      <div class="navbar-nav">
+        <a class="nav-item active nav-link" href="alexandra_api.html">API</a>
+      </div>
+    </nav>
+  </header>
+
+  <section>
+    <div class="outer container-fluid">
+
+      <!-- Upper -->
+      <div class="upper jumbotron my-4">
+        <h1 class="display-4">Explanation</h1>
+        <hr class="explanation my-4" />
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script>
+        $(function(){
+          $("#includedContent").load("src/writeup.html");
+        });
+        </script>
+        <div id="includedContent"></div>
+
+      </div>
+
+      <style>
+        .selectors {
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+
+        .selectors li {
+          padding: 10px !important;
+        }
+      </style>
+
+      <!-- Main -->
+      <div class="visualization row">
+        <!-- selector Section -->
+        <div class="card col-sm-3">
+          <div class="card-header row">
+            <h5>Select</h5>
+            <div class="col-md-8"> map elements </div>
+          </div>
+          <div class="card-body selectors row">
+            <ul class="list-group col-md-6">
+              <p>Hotel</p>
+              <li class="list-group-item list-group-item-light list-group-item-action active" id="h">Hotel</li>
+              <hr class="my-1" />
+              <p>Mass Transit</p>
+              <li class="list-group-item list-group-item-light list-group-item-action" id="bs">Bus Station</li>
+              <hr class="my-1" />
+              <p>Vehicle Types</p>
+              <li class="list-group-item list-group-item-light list-group-item-action active" id="cars">Cars</li>
+              <li class="list-group-item list-group-item-light list-group-item-action active" id="hv">Heavy Vehicles
+              </li>
+              <li class="list-group-item list-group-item-light list-group-item-action active" id="pab">Pedestrians and
+                Bicycles</li>
+            </ul>
+            <ul class="list-group col-md-6">
+              <p>Parking</p>
+              <li class="list-group-item list-group-item-light list-group-item-action" id="np">No Parking</li>
+              <li class="list-group-item list-group-item-light list-group-item-action" id="up">Unregulated Parking</li>
+              <li class="list-group-item list-group-item-light list-group-item-action" id="m">Metered</li>
+              <li class="list-group-item list-group-item-light list-group-item-action" id="mc">Metered Commercial</li>
+              <li class="list-group-item list-group-item-light list-group-item-action" id="hp">2 Hour Parking</li>
+              <li class="list-group-item list-group-item-light list-group-item-action" id="hewrp">2 Hour Except with
+                Residential Permit</li>
+              <li class="list-group-item list-group-item-light list-group-item-action" id="ro">Resident Only</li>
+              <li class="list-group-item list-group-item-light list-group-item-action" id="rppo">Resident Permit Parking
+                Only</li>
+              <li class="list-group-item list-group-item-light list-group-item-action" id="rppo88">Resident Permit
+                Parking Only (8am - 8pm)</li>
+              <li class="list-group-item list-group-item-light list-group-item-action" id="rppo86">Resident Permit
+                Parking Only (8am - 6pm)</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Visualization Section -->
+        <div class="card col-md-4">
+          <div class="card-header row">
+            <h5 class="col-md-6">Intersection</h5>
+            <div class="gradient col-md-6">
+              <p class="gradient-label" id="lowtraf">Low Traffic</p>
+              <p class="gradient-label" id="hightraf">High Traffic</p>
+            </div>
+          </div>
+
+          <div class="intersection">
+            <img src="intersection_full.svg" class="injectable" />
+          </div>
+        </div>
+
+        <style>
+          .sTime {
+            padding-right: 50px;
+          }
+          .noMargin {
+            margin: -0.5em 0px !important;
+          }
+        </style>
+
+        <div class="line-chart-section card col-md-5">
+          <div class="card-header row">
+            <h5 class="traffic-label">Traffic Volume</h5>
+            <div class="time-label">
+              Start Time:
+              <div class="time-value sTime"></div>
+            </div>
+            <div class="time-label">
+              End Time:
+              <div class="time-value eTime"></div>
+            </div>
+          </div>
+
+          <div class="line-chart"></div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Script Area -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+    </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+    </script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script>
+    var dispatch = d3.dispatch('paramConfig', 'dataLoaded', 'updateLine', 'updateTime', 'vehiclesFiltered');
+
+    // Fetch data from server
+    $.get("https://chanminis.online/public/api/alexandra/trafficflow/time/07:00/17:00", function (result) {
+      // Inject Intersection SVG
+      SVGInject.setOptions({ makeIdsUnique: false });
+      SVGInject(document.querySelector("img.injectable"), {
+        onAllFinish: function () {
+          d3.selectAll(".all").style("opacity", 0);
+          // Draw Intersection
+          $.getScript("src/intersection.js").done(() => {
+            $.getScript("src/line-graph.js").done(function () {
+              var colw = $(".line-chart-section").innerWidth() - 50;
+              var colh = $(".line-chart-section").innerHeight() - 100;
+              var margin = 40;
+              dispatch.call('paramConfig', null, { width: colw, height: colh, margin: margin });
+              dispatch.call('dataLoaded', null, result);
+            })
+          });
+        }
+      });
+    });
+
+
+    $(".selectors").click(function (d) {
+      var targ = $(d.target);
+      var svgtarg = d3.selectAll(`.svg_${d.target.id}`);
+      var svgtarg2 = d3.selectAll(`.svg_${d.target.id}Subset`);
+      if (targ.hasClass("active")) {
+        targ.removeClass("active");
+        svgtarg.transition().style("opacity", 0);
+        svgtarg2.transition().style("opacity", 0);
+      } else {
+        targ.addClass("active");
+        svgtarg.transition().style("opacity", 1);
+        svgtarg2.transition().style("opacity", 0.5);
+      }
+
+      // Update vehicle types selected
+      let activeVechicleTypes = [];
+
+      const cars = $('#cars').hasClass('active');
+      const hv = $('#hv').hasClass('active');
+      const pab = $('#pab').hasClass('active');
+
+      if (cars) {
+        activeVechicleTypes.push('CARS');
+      }
+
+      if (hv) {
+        activeVechicleTypes.push('HV');
+      }
+
+      if (pab) {
+        activeVechicleTypes.push('PAB');
+      }
+
+      dispatch.call('vehiclesFiltered', null, activeVechicleTypes);
+    })
+  </script>
+</body>
+
+</html>

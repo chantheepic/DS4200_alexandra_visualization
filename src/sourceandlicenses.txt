@@ -1,0 +1,17 @@
+D3
+https://d3js.org/
+
+jQuery
+https://jquery.com/
+
+Bootstrap
+https://getbootstrap.com/
+
+SVG injector
+https://github.com/iconfu/svg-inject
+
+Slim Framework
+https://www.slimframework.com/
+
+MySQL
+https://www.mysql.com/
