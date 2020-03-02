@@ -1,4 +1,4 @@
-const intersection = d3.select('.svg_skel');
+const intersection = d3.select('.svg_building');
 
 const arrows = d3.selectAll('.svg_arrow');
 const trails = d3.selectAll('.svg_arrow_trail');

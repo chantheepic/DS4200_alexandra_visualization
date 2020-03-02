@@ -31,7 +31,7 @@
 
       <!-- Upper -->
       <div class="upper jumbotron my-4">
-        <h1 class="display-4">Explanation</h1>
+        <h1 class="display-4">Explanation and Interactive Charts</h1>
         <hr class="explanation my-4" />
         <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
         <script>
@@ -152,7 +152,7 @@
     var dispatch = d3.dispatch('paramConfig', 'dataLoaded', 'updateLine', 'updateTime', 'vehiclesFiltered');
 
     // Fetch data from server
-    $.get("https://chanminis.online/public/api/alexandra/trafficflow/time/07:00/17:00", function (result) {
+    $.get("https://chanminis.online/api/alexandra/trafficflow", function (result) {
       // Inject Intersection SVG
       SVGInject.setOptions({ makeIdsUnique: false });
       SVGInject(document.querySelector("img.injectable"), {

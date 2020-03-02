@@ -2,6 +2,8 @@
 use \Psr\Http\Message\ServerRequestInterface as Request;
 use \Psr\Http\Message\ResponseInterface as Response;
 
+$app = new \Slim\App;
+
 // Get All Intersections
 $app->get('/api/alexandra/trafficflow/time/{startTime}/{endTime}', function(Request $request, Response $response){
     $startTime = $request->getAttribute('startTime');
@@ -33,9 +35,13 @@ $app->get('/api/alexandra/trafficflow/total/{type}', function(Request $request, 
     return fetch_a($query, $response);
 });
 $app->get('/api/alexandra/trafficflow', function(Request $request, Response $response){
-    $type = $request->getAttribute('type');
-    $query = "SELECT * FROM `washington`;";
+    $startTime = $request->getAttribute('startTime');
+    $endTime = $request->getAttribute('endTime');
+    $query = "SELECT *, hour(time) as hour, minute(time) as minute FROM washington WHERE time(time) > '07:00' AND time(time) < '17:00';";
     return fetch_a($query, $response);
+});
+$app->get('/api/ping', function(Request $request, Response $response){
+    echo 'pong';
 });
 
 function fetch_a($query, $response){

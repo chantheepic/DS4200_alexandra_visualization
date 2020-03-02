@@ -1,9 +1,13 @@
 <?php
 class AlexandraDatabase{
-    private $servername = "chanminis.online";
-    private $username = "chanmini_user";
-    private $password = "cascade";
-    private $dbname = "chanmini_alexandra_db";
+    // private $servername = "remotemysql.com";
+    // private $username = "9Xh6WpXxVP";
+    // private $password = "69Uni4xWyi";
+    // private $dbname = "9Xh6WpXxVP";
+    private $servername = "localhost";
+    private $username = "chapar83_hotel";
+    private $password = "Amoriamor1";
+    private $dbname = "chapar83_hotel";
     private $conn = null;
 
     public function connect() {
