@@ -1,7 +1,7 @@
 # A-Fried-Park-Macdonald
 
 [Link to Github Repo](https://github.ccs.neu.edu/DS4200-S19/A--Fried-Park-Macdonald.git)
-[Link to Github Pages](https://pages.github.ccs.neu.edu/DS4200-S19/A--Fried-Park-Macdonald/)
+[Link to Site](https://www.chanminis.online)
 
 #### Motivation
 
